@@ -1,0 +1,5 @@
+data/
+ILK-GIRIS.txt
+__pycache__/
+*.pyc
+.env

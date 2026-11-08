@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Çıtır Pizza Panel</title>
+  <link rel="stylesheet" href="/app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="panel-body">
+  <main id="login" class="login-card">
+    <p class="kicker">Çıtır Pizza</p>
+    <h1>Mutfak paneli</h1>
+    <form id="login-form">
+      <label>Kullanıcı adı <input name="username" autocomplete="username" required></label>
+      <label>Şifre <input name="password" type="password" autocomplete="current-password" required></label>
+      <p class="error" id="login-error"></p>
+      <button class="solid" type="submit">Giriş</button>
+    </form>
+  </main>
+  <div id="app" class="panel-shell" hidden>
+    <aside class="side">
+      <strong>Çıtır Panel</strong>
+      <p id="who"></p>
+      <button type="button" data-tab="orders" class="on">Siparişler</button>
+      <button type="button" data-tab="menu">Menü</button>
+      <button type="button" data-tab="settings">Ayarlar</button>
+      <button type="button" data-tab="users">Kullanıcılar</button>
+      <button type="button" id="sound">Sesi aç</button>
+      <button type="button" id="logout">Çıkış</button>
+    </aside>
+    <section class="main">
+      <div class="warn" id="draft-warn" hidden>Fiyatlar taslak. Müşteri bu rakamları görüyor. Menüden kendi fiyatını yaz.</div>
+      <div id="view"></div>
+    </section>
+  </div>
+  <script src="/panel.js"></script>
+</body>
+</html>
