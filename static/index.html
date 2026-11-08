@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Çıtır Pizza Sipariş | Oba, Alanya — Gel-Al ve Adrese Teslim</title>
+  <meta name="description" content="Alanya Oba Çıtır Pizza & Cafe online sipariş. İnce hamurlu pizza, makarna, ızgara, burger ve tatlı. Gel-al veya adrese teslim. Karakuşlar Sokak, 0242 538 86 84.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="geo.region" content="TR-07">
+  <meta name="geo.placename" content="Alanya">
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:title" content="Çıtır Pizza & Cafe | Oba Alanya sipariş">
+  <meta property="og:description" content="Pizza, makarna ve ızgara. Gel-al veya adrese teslim. Kapıda nakit veya kart.">
+  <meta property="og:image" content="og.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,560;1,9..144,560&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/app.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23c23b24'/%3E%3Cpath d='M32 10l18 36H14z' fill='%23fffaf4'/%3E%3C/svg%3E">
+  <script type="application/ld+json"><!--LD--></script>
+  <script>document.documentElement.classList.add("js")</script>
+  <style>.js #ssr{display:none}</style>
+</head>
+<body>
+  <div class="topbar" id="topbar">Oba, Alanya · Gel-al ve adrese teslim</div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#menu">
+        <span class="mark">Ç</span>
+        <span><strong>Çıtır Pizza</strong><span>Cafe · Oba</span></span>
+      </a>
+      <div class="nav-actions">
+        <button class="lang" type="button" id="lang-tr" aria-pressed="true">TR</button>
+        <button class="lang" type="button" id="lang-en" aria-pressed="false">EN</button>
+        <a class="ghost" id="call-link" href="tel:+902425388684">Ara</a>
+      </div>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <p class="kicker" id="kicker">Oba · Alanya</p>
+        <h1 id="hero-title">Sıcak pizza,<br><em>kapına kadar.</em></h1>
+        <p class="lead" id="hero-lead">Çıtır Pizza & Cafe menüsünden gel-al veya adrese teslim sipariş ver. Kapıda nakit veya kart.</p>
+        <p id="open-state"></p>
+      </div>
+      <img src="/og.jpg" alt="İnce hamurlu pizza, temsilî görsel. Çıtır Pizza & Cafe, Oba Alanya.">
+    </section>
+    <nav class="chips" id="chips" aria-label="Menü kategorileri"></nav>
+    <div class="layout" id="menu">
+      <div id="list"></div>
+      <aside class="cart" id="cart" aria-label="Sepet"></aside>
+    </div>
+    <section class="track" id="track">
+      <h2>Sipariş durumu</h2>
+      <form id="track-form">
+        <label>Sipariş kodu <input name="code" required placeholder="CP-1001"></label>
+        <label>Telefonun son 4 hanesi <input name="phone" required inputmode="numeric" maxlength="4"></label>
+        <button class="solid" type="submit">Sorgula</button>
+      </form>
+      <p id="track-out"></p>
+    </section>
+  </main>
+  <div id="ssr"><!--SSR--></div>
+  <footer>
+    <div class="wrap">
+      <strong>Çıtır Pizza & Cafe</strong><br>
+      Karakuşlar Sokak A Blok No: 2, Ağız ve Diş Sağlığı Hastanesi karşısı, 07400 Oba, Alanya<br>
+      <a href="tel:+902425388684">0242 538 86 84</a> · <a href="tel:+905551528684">0555 152 86 84</a><br>
+      Pazartesi–Cumartesi 10:30–22:00 · Pazar kapalı. Fiyatlar işletme panelinden güncellenir.
+      <p><a href="/panel">Personel girişi</a></p>
+    </div>
+  </footer>
+  <a class="dock" href="#cart" id="dock">Sepet</a>
+  <div class="consent" id="consent" hidden>
+    <p>Sipariş için zorunlu değil. Google reklam ölçümü yalnızca kabul edersen yüklenir.</p>
+    <button class="solid" type="button" id="consent-yes">Kabul et</button>
+  </div>
+  <script src="/ads.js"></script>
+  <script src="/store.js"></script>
+</body>
+</html>
